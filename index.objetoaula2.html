@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF8" />
+    <title>Objeto </title>
+
+<body>
+    <h1>Aula Objeto numero dois (2) </h1>
+    <script>
+
+        const person = {
+            name: "Marcos",
+            age: 40,
+            address: {
+                street: "AV Central",
+                city: "São José Dos Campos",
+            },
+        }
+        person.name = "Robson"//acessei e mudei a cont person(cont não é possivel alterar os valores)...
+        //...mas nesse caso é possivel ,OBS foge a regra para vareaveis do tipo constante, object e arrey.
+        person.hair = "preto"
+
+        console.log(person.hair)//neste caso foi acrecentado valor de codigo em tempo de execução//
+
+        console.log(person.name)//coamndo para acessar as propriedades do objeto//
+        console.log(person.age)//acessando objeto através do console.log()//
+
+        //é possivel acessar o objeto através da interpolação//
+        console.log(
+            `${person.name} tem cabelos da cor ${person.hair} tem ${person.age} anos e reside na ${person.address.street} cidade de ${person.address.city} `
+        )
+    </script>
+
+</html>
+</head>
+</body>
